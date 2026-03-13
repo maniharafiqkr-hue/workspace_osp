@@ -10,3 +10,7 @@ def home():
 if __name__ == '__main__':
     app.run(debug=True)
     
+
+@app.route('/about')
+def about():
+    return "<h2>About This Blog</h2><p>This is a project for OSP.</p>"
