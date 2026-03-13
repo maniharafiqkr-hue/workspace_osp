@@ -14,3 +14,7 @@ if __name__ == '__main__':
 @app.route('/about')
 def about():
     return "<h2>About This Blog</h2><p>This is a project for OSP.</p>"
+
+@app.route('/contact')
+def contact():
+    return "<h2>Contact Us</h2><p>This one is just a dummy page.</p>"
