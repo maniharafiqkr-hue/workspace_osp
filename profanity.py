@@ -27,3 +27,8 @@ class ProfanityFilter:
             return ""
         
         return self.word_pattern.sub(self.mask_match, text)
+
+# Facade function to maintain compatibility with older tests
+def mask_profanity(text: str) -> str:
+    profanity_filter = ProfanityFilter()
+    return profanity_filter.mask_profanity(text)
